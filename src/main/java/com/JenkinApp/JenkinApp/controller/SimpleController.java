@@ -10,4 +10,10 @@ public class SimpleController {
     public String greet(@RequestParam String name) {
         return "Hello, " + name + "!";
     }
+
+    @GetMapping("/user")
+    public void hello()
+    {
+        System.out.println("hello");
+    }
 }
